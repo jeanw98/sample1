@@ -1,12 +1,29 @@
-﻿using System;
+﻿
+using System;
+using System.Linq;
+using System.Diagnostics;
 
 namespace Sample
 {
+
+    
+
     class Program
-    {
-        static void Main(string[] args)
+    {   
+        static int CountWords(string sentence)
         {
-            Console.WriteLine("Hello World! This is an update");
+            int wordCount = sentence.Split(' ').Length;
+            return wordCount;
+        }
+
+        static void Main(string[] args)
+
+        {
+            Console.WriteLine("Escribe una oración");
+            string n1;
+            n1 = Console.ReadLine();
+            int result = CountWords(n1);
+            Console.WriteLine("tu oracion tiene "+ result +" palabras");
         }
     }
 }
