@@ -23,7 +23,8 @@ namespace Sample
             string n1;
             n1 = Console.ReadLine();
             int result = CountWords(n1);
-            Console.WriteLine("tu oracion tiene "+ result +" palabras");
+            Console.WriteLine("tu oracion tiene "+ result +" palabrass");
+
         }
     }
 }
